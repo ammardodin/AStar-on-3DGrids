@@ -19,11 +19,13 @@ Theoretical worlds are imposed in which the implementations are put to the test.
      return 1.0*(getTile(p1) / (getTile(p2) + 1));
  }
  ```
+ ### Prerequisite
+ Before you compile and run the modules, make sure you are in the `src/main/java` directory.
 
  ### Compiling & Running
  To compile, run the following command in your terminal:
  ```shell
- javac  *.java
+ javac *.java
  ```
 
  To run any of the AI modules on a randomly generated map, use the following command:
@@ -33,7 +35,7 @@ Theoretical worlds are imposed in which the implementations are put to the test.
 
  To run any of the AI modules on the Mount Helena map, use the following command:
  ```shell
-java -Xmx1024M Main -load MTAFT.XYZ <AIModule>
+java -Xmx1024M Main -load ../resources/MTAFT.XYZ <AIModule>
 ```
 
  To run mutiple AI Modules, use the following command:
