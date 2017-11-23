@@ -31,6 +31,11 @@ Theoretical worlds are imposed in which the implementations are put to the test.
  java Main <AIModule>
  ```
 
+ To run any of the AI modules on the Mount Helena map, use the following command:
+ ```shell
+java -Xmx1024M Main -load MTAFT.XYZ <AIModule>
+```
+
  To run mutiple AI Modules, use the following command:
  ```shell
 java Main <AIModule> <AIModule> ...
