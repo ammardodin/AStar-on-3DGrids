@@ -1,0 +1,14 @@
+—seed 1
+PathCost, 198.40953301482975, Uncovered, 1004
+
+—seed2
+PathCost, 198.3505826306458,  Uncovered, 1004
+
+—seed3
+PathCost, 198.45353447487392, Uncovered, 1004
+
+—seed4
+PathCost, 198.29551443251432, Uncovered, 1004
+
+—seed5
+PathCost, 198.60345691194533, Uncovered, 1004
