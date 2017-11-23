@@ -6,7 +6,7 @@ The core of A* lies at the heuristic used to determine the order of node expansi
 For more info, see [Wikipedia](https://en.wikipedia.org/A*_search_algorithm)
 
 ### Summary
-This work was part of an undergradute AI class I took at [UCDavis](www.ucdavis.edu). This project implements several A* Modules with different heuristics to determine the best path to reach the peak of [Mount Saint Helena](https://en.wikipedia.org/wiki/Mount_Saint_Helena).
+This work was part of an undergradute AI class I took at [UCDavis](https://www.ucdavis.edu). This project implements several A* Modules with different heuristics to determine the best path to reach the peak of [Mount Saint Helena](https://en.wikipedia.org/wiki/Mount_Saint_Helena).
 
 Theoretical worlds are imposed in which the implementations are put to the test. Each of which can be defined by their cost function. More concretely, the worlds can be described by:
 ```java
