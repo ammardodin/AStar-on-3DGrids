@@ -11,39 +11,35 @@ import java.util.List;
  * 
  * @author Leonid Shamis
  */
-public class StupidAI implements AIModule
-{
-    /// Creates the path to the goal.
-    public List<Point> createPath(final TerrainMap map)
-    {
-        // Holds the resulting path
-        final ArrayList<Point> path = new ArrayList<Point>();
+public class StupidAI implements AIModule {
+  /// Creates the path to the goal.
+  public List<Point> createPath(final TerrainMap map) {
+    // Holds the resulting path
+    final ArrayList<Point> path = new ArrayList<Point>();
 
-        // Keep track of where we are and add the start point.
-        final Point CurrentPoint = map.getStartPoint();
-        path.add(new Point(CurrentPoint));
+    // Keep track of where we are and add the start point.
+    final Point CurrentPoint = map.getStartPoint();
+    path.add(new Point(CurrentPoint));
 
-        // Keep moving horizontally until we match the target.
-        while(map.getEndPoint().x != CurrentPoint.x)
-        {
-            if(map.getEndPoint().x > CurrentPoint.x)
-                ++CurrentPoint.x;
-            else
-                --CurrentPoint.x;
-            path.add(new Point(CurrentPoint));
-        }
-
-        // Keep moving vertically until we match the target.
-        while(map.getEndPoint().y != CurrentPoint.y)
-        {
-            if(map.getEndPoint().y > CurrentPoint.y)
-                ++CurrentPoint.y;
-            else
-                --CurrentPoint.y;
-            path.add(new Point(CurrentPoint));
-        }
-
-        // We're done!  Hand it back.
-        return path;
+    // Keep moving horizontally until we match the target.
+    while (map.getEndPoint().x != CurrentPoint.x) {
+      if (map.getEndPoint().x > CurrentPoint.x)
+        ++CurrentPoint.x;
+      else
+        --CurrentPoint.x;
+      path.add(new Point(CurrentPoint));
     }
+
+    // Keep moving vertically until we match the target.
+    while (map.getEndPoint().y != CurrentPoint.y) {
+      if (map.getEndPoint().y > CurrentPoint.y)
+        ++CurrentPoint.y;
+      else
+        --CurrentPoint.y;
+      path.add(new Point(CurrentPoint));
+    }
+
+    // We're done!  Hand it back.
+    return path;
+  }
 }

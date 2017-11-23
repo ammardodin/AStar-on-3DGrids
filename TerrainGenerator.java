@@ -5,7 +5,6 @@
  * 
  * @author Leonid Shamis
  */
-public interface TerrainGenerator
-{
-    public byte[][] getTerrain();
+public interface TerrainGenerator {
+  public byte[][] getTerrain();
 }
